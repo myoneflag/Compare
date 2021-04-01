@@ -1,0 +1,258 @@
+/* CSS Document */
+/*grab from
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%; 
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{box-sizing: border-box;}
+body {
+	line-height: 1;
+}
+html, body { min-width: 800px; min-height: 600px; }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.btnInfo{
+    background: #00CCFF;
+    color: #fff;
+    border: 1px solid #979ad7;
+}
+.btnSuccess{
+    background: #339966;
+    color: #fff;
+    border: 1px solid #37483a;
+}
+.btnWarning{
+    background: #FF9900;
+    color: #fff;
+    border: 1px solid #FFCC99;
+} 
+.btnDanger{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #800000;
+}
+.btnHover:hover{
+    background: #E1E3CC;
+    color: #865b10;
+    border: 1px solid #C0C0C0;
+    box-shadow: 0 0 5px #bfbdb3;
+}
+/*---------------------------------------*/
+
+body {
+	background-color:#800000;
+	
+}
+#wrapper {
+	margin: 0 auto;
+	width: 930px;
+	background-color: #ffefff; 
+}
+#edging {
+	clear:both;
+	margin: 0 auto;
+	width: 930px; 
+	min-height: 600px;
+	background-color:#ffefff;	
+}	
+#header {
+	width:930px;
+	height: 80px;
+	background-color:#FC0;	
+}
+#header .logo{
+	float:left;	
+	width: 150px;
+}
+#header .banner{
+	float: right;
+	width: 780px;
+	color: maroon;
+	padding: 20px auto;
+}
+#header .login{
+float:right;
+width: 150px;
+text-align: center;	
+}
+#header .login a{
+	text-decoration: none;
+	font-size:24px;
+	font-weight:bold;
+	background-color:#FffCcc0f;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:maroon;
+}
+#topnav{
+	clear:both;
+	border-top:1px #CCCCCC solid;
+	border-bottom:1px #CCCCCC solid;
+	background-color:#C60;
+}
+#topnav ul	{
+	margin:5px;
+	padding: 25px auto;
+	text-align:center;
+}							
+#topnav	ul li	{
+	display:inline; 
+	padding:8px 25px;
+}
+#topnav ul li a {
+	text-decoration:none;
+	color: #d4d3db;
+}
+#topnav ul li a:hover {
+	text-decoration: underline;
+}
+#topnav ul li.active a {
+	text-decoration: underline; 
+    font-weight: bold;
+}
+#topread{
+	background-color: #FC0;
+	text-align: center;
+}
+#content {
+	clear:both;
+	width: 870px;  
+	margin:auto;
+	padding: 20px;
+    min-height: 510px;
+}
+#content p{
+	line-height: 140%;
+}
+#footer{
+	clear:both; 
+	padding:10px; 
+	margin-top:20px; 
+	border-top:1px #ccc dotted;
+	background-color: #FC0;
+	text-align: center;
+}
+.areaConfig{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.areaConfig select {
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+} 
+.areaConfig button{ 
+    display: inline-block;
+    border: 1px solid #b0adaa;
+    background: #f3f3f3;
+    color: #99321C;
+}
+.areaConfig button:hover{ 
+    border: 1px solid #000080;
+    background: #FF9900;
+    color: #FFFF00;
+}
+.selectMode, .selectTheme{margin-right: 25px;}
+.selectMode, .selectTheme, .clearEditor{
+    display: inline-block;
+}
+#preview{    
+    display: block;
+    width: 100%;
+    border: 1px solid #cbc7c3;
+    background: white;
+    overflow-y: auto;
+    overflow: hidden;
+}
+.bottom-editor{
+    display: inline-block; 
+    width: 100%; 
+    position: relative; 
+    margin-bottom: 10px;
+}
+.bottom-editor > div{
+    display: inline-block;
+}
+.bottom-editor .btbox1{  
+    position: absolute; 
+    left: 0;   
+    top: 0; 
+}
+.bottom-editor .btbox2{
+    text-align: center;
+    width: 100%;  
+}
+.bottom-editor .btbox3{
+    text-align: right; 
+    position: absolute; 
+    right: 0;   
+    top: 0; 
+}
+/** --- codemirror style --- */
+.CodeMirror { height: auto; border: 1px solid #ddd; }
+.CodeMirror-scroll { min-height: 90px; max-height: 500px; }
+.CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+
+/** --- mathshare style --- */
+.mathshare #textarea{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #C0C0C0;
+    padding: 10px;
+    resize: none;
+    min-height: 100px;
+    overflow-y: hidden;
+}
+table.table-info{
+    font-size: 12px;
+}
+table.table-info tr td{
+    padding: 3px 5px;
+}
+.mathpreview{
+    display: block;
+    position: relative;
+    background: #FFFFFF;
+}
+.mathpreview #MathPreview,
+.mathpreview #MathBuffer{
+    border-color: #C0C0C0 !important;
+    padding: 10px !important;
+}
